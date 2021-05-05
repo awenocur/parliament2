@@ -49,14 +49,14 @@ def run_parliament(bam, bai, ref_genome, fai, prefix, filter_short_contigs, brea
 
     if bai is not None:
         if fai is not None:
-            subprocess.check_call(['bash', exec_path + 'parliament2.sh', bam, bai, ref_genome, fai, prefix, str(filter_short_contigs), str(breakdancer), str(breakseq), str(manta), str(cnvnator), str(lumpy), str(delly_deletion), str(delly_insertion), str(delly_inversion), str(delly_duplication), str(genotype), str(svviz), str(svviz_only_validated_candidates), str(dnanexus)])
+            subprocess.check_call(['bash', exec_path + '/parliament2.sh', bam, bai, ref_genome, fai, prefix, str(filter_short_contigs), str(breakdancer), str(breakseq), str(manta), str(cnvnator), str(lumpy), str(delly_deletion), str(delly_insertion), str(delly_inversion), str(delly_duplication), str(genotype), str(svviz), str(svviz_only_validated_candidates), str(dnanexus)])
         else:
-            subprocess.check_call(['bash', exec_path + 'parliament2.sh', bam, bai, ref_genome, "None", prefix, str(filter_short_contigs), str(breakdancer), str(breakseq), str(manta), str(cnvnator), str(lumpy), str(delly_deletion), str(delly_insertion), str(delly_inversion), str(delly_duplication), str(genotype), str(svviz), str(svviz_only_validated_candidates), str(dnanexus)])
+            subprocess.check_call(['bash', exec_path + '/parliament2.sh', bam, bai, ref_genome, "None", prefix, str(filter_short_contigs), str(breakdancer), str(breakseq), str(manta), str(cnvnator), str(lumpy), str(delly_deletion), str(delly_insertion), str(delly_inversion), str(delly_duplication), str(genotype), str(svviz), str(svviz_only_validated_candidates), str(dnanexus)])
     else:
         if fai is not None:
-            subprocess.check_call(['bash', exec_path + 'parliament2.sh', bam, "None", ref_genome, fai, prefix, str(filter_short_contigs), str(breakdancer), str(breakseq), str(manta), str(cnvnator), str(lumpy), str(delly_deletion), str(delly_insertion), str(delly_inversion), str(delly_duplication), str(genotype), str(svviz), str(svviz_only_validated_candidates), str(dnanexus)])
+            subprocess.check_call(['bash', exec_path + '/parliament2.sh', bam, "None", ref_genome, fai, prefix, str(filter_short_contigs), str(breakdancer), str(breakseq), str(manta), str(cnvnator), str(lumpy), str(delly_deletion), str(delly_insertion), str(delly_inversion), str(delly_duplication), str(genotype), str(svviz), str(svviz_only_validated_candidates), str(dnanexus)])
         else:
-            subprocess.check_call(['bash', exec_path + 'parliament2.sh', bam, "None", ref_genome, "None", prefix, str(filter_short_contigs), str(breakdancer), str(breakseq), str(manta), str(cnvnator), str(lumpy), str(delly_deletion), str(delly_insertion), str(delly_inversion), str(delly_duplication), str(genotype), str(svviz), str(svviz_only_validated_candidates), str(dnanexus)])
+            subprocess.check_call(['bash', exec_path + '/parliament2.sh', bam, "None", ref_genome, "None", prefix, str(filter_short_contigs), str(breakdancer), str(breakseq), str(manta), str(cnvnator), str(lumpy), str(delly_deletion), str(delly_insertion), str(delly_inversion), str(delly_duplication), str(genotype), str(svviz), str(svviz_only_validated_candidates), str(dnanexus)])
 
 
 def main():

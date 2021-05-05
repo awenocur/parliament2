@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-exec_prefix=dirname $(realpath $0)
+exec_prefix=$(dirname $(realpath $0))
 illumina_bam=$1
 illumina_bai=$2
 ref_fasta=$3
